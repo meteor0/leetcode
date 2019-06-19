@@ -6,6 +6,12 @@ import java.util.Map;
 
 public class TwoSumTest {
 
+  /**
+   * 解法二 放入map中
+   * @param nums
+   * @param target
+   * @return
+   */
   public static int[] twoSum2(int[] nums, int target) {
     int[] result = new int[2];
     Map<Integer, Integer> params = new HashMap<>(nums.length);
@@ -25,7 +31,12 @@ public class TwoSumTest {
     return result;
   }
 
-/**双重for循环*/
+  /**
+   * 解法一 双重for循环
+   * @param nums
+   * @param target
+   * @return
+   */
   public static int[] twoSum1(int[] nums, int target) {
     int[] result = new int[2];
     for (int i = 0; i < nums.length; i++) {
